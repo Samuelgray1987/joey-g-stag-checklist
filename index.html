@@ -16,7 +16,6 @@
             --accent-sleep: #9933ff;
             --accent-food: #ccff00;
             --accent-survival: #ff0066;
-            --accent-kitchen: #0099ff;
         }
 
         body {
@@ -102,13 +101,11 @@
             margin-bottom: 15px;
         }
 
-        /* Category specific border colors */
         .card[data-cat="phone"] { border-top-color: var(--primary); }
         .card[data-cat="clothing"] { border-top-color: var(--accent-clothing); }
         .card[data-cat="sleep"] { border-top-color: var(--accent-sleep); }
         .card[data-cat="food"] { border-top-color: var(--accent-food); }
         .card[data-cat="scout"] { border-top-color: var(--accent-survival); }
-        .card[data-cat="kitchen"] { border-top-color: var(--accent-kitchen); }
 
         h2 {
             margin: 0 0 12px 0;
@@ -123,7 +120,6 @@
         .card[data-cat="sleep"] h2 { color: var(--accent-sleep); }
         .card[data-cat="food"] h2 { color: var(--accent-food); }
         .card[data-cat="scout"] h2 { color: var(--accent-survival); }
-        .card[data-cat="kitchen"] h2 { color: var(--accent-kitchen); }
 
         .item-row {
             display: flex;
@@ -139,7 +135,6 @@
             border-bottom: none;
         }
 
-        /* Styled custom checkboxes for fat fingers on mobile */
         input[type="checkbox"] {
             appearance: none;
             -webkit-appearance: none;
@@ -246,6 +241,7 @@
             <div class="item-row"><input type="checkbox" id="c7"><label for="c7" class="item-text">Rainy day / cold as f*ck clothes</label></div>
             <div class="item-row"><input type="checkbox" id="c8"><label for="c8" class="item-text">Hat</label></div>
             <div class="item-row"><input type="checkbox" id="c9"><label for="c9" class="item-text">Sunnies</label></div>
+            <div class="item-row"><input type="checkbox" id="c10"><label for="c10" class="item-text"><strong>Fancy Dress</strong> <span class="note">Stag party uniform</span></label></div>
         </div>
     </div>
 
@@ -258,9 +254,7 @@
             <div class="item-row"><input type="checkbox" id="s4"><label for="s4" class="item-text">Floor Mat</label></div>
             <div class="item-row"><input type="checkbox" id="s5"><label for="s5" class="item-text">Lights / Fairy lights / Lamps</label></div>
             <div class="item-row"><input type="checkbox" id="s6"><label for="s6" class="item-text">Headtorches</label></div>
-            <div class="item-row"><input type="checkbox" id="s7"><label for="s7" class="item-text">Flag <span class="note">So we don't forget where the tent is</span></label></div>
             <div class="item-row"><input type="checkbox" id="s8"><label for="s8" class="item-text">Peg hammering thingamajig</label></div>
-            <div class="item-row"><input type="checkbox" id="s9"><label for="s9" class="item-text">Wheely trolley to carry it all</label></div>
             <div class="item-row"><input type="checkbox" id="s10"><label for="s10" class="item-text">Camping Chairs</label></div>
             <div class="item-row"><input type="checkbox" id="s11"><label for="s11" class="item-text">Speaker?</label></div>
         </div>
@@ -272,10 +266,6 @@
             <div class="item-row"><input type="checkbox" id="f1"><label for="f1" class="item-text">Bed</label></div>
             <div class="item-row"><input type="checkbox" id="f2"><label for="f2" class="item-text">Sleeping Bag or Duvet</label></div>
             <div class="item-row"><input type="checkbox" id="f3"><label for="f3" class="item-text">Pillows</label></div>
-            <div class="item-row"><input type="checkbox" id="f4"><label for="f4" class="item-text"><strong>Oodie</strong></label></div>
-            <div class="item-row"><input type="checkbox" id="f5"><label for="f5" class="item-text">All the Blankets!</label></div>
-            <div class="item-row"><input type="checkbox" id="f6"><label for="f6" class="item-text">Hot water bottle?</label></div>
-            <div class="item-row"><input type="checkbox" id="f7"><label for="f7" class="item-text">Fluffy socks</label></div>
         </div>
     </div>
 
@@ -284,25 +274,11 @@
         <div class="item-list">
             <div class="item-row"><input type="checkbox" id="m1"><label for="m1" class="item-text">Bottled water</label></div>
             <div class="item-row"><input type="checkbox" id="m2"><label for="m2" class="item-text">Tea, Coffee, Milk</label></div>
-            <div class="item-row"><input type="checkbox" id="m3"><label for="m3" class="item-text">Squash</label></div>
-            <div class="item-row"><input type="checkbox" id="m4"><label for="m4" class="item-text"><strong>Beer / Cider</strong></label></div>
-            <div class="item-row"><input type="checkbox" id="m5"><label for="m5" class="item-text">Spray Oil</label></div>
-            <div class="item-row"><input type="checkbox" id="m6"><label for="m6" class="item-text">Porridge pots</label></div>
+            <div class="item-row"><input type="checkbox" id="m4"><label for="m4" class="item-text"><strong>Cider / Beer <span style="color: var(--primary);">(MAX 24 CANS ONLY)</span></strong></label></div>
             <div class="item-row"><input type="checkbox" id="m7"><label for="m7" class="item-text">Cereal bars</label></div>
-            <div class="item-row"><input type="checkbox" id="m8"><label for="m8" class="item-text">Bananas</label></div>
-            <div class="item-row"><input type="checkbox" id="m9"><label for="m9" class="item-text">Bacon</label></div>
-            <div class="item-row"><input type="checkbox" id="m10"><label for="m10" class="item-text">Beans</label></div>
-            <div class="item-row"><input type="checkbox" id="m11"><label for="m11" class="item-text">Eggs</label></div>
             <div class="item-row"><input type="checkbox" id="m12"><label for="m12" class="item-text">Snacky Snacks</label></div>
             <div class="item-row"><input type="checkbox" id="m13"><label for="m13" class="item-text">Pot noodles</label></div>
-            <div class="item-row"><input type="checkbox" id="m14"><label id="m14" class="item-text">Sachet rice</label></div>
-            <div class="item-row"><input type="checkbox" id="m15"><label for="m15" class="item-text">Chicken Curry</label></div>
-            <div class="item-row"><input type="checkbox" id="m16"><label for="m16" class="item-text">Pasta</label></div>
-            <div class="item-row"><input type="checkbox" id="m17"><label for="m17" class="item-text">Bolognese</label></div>
-            <div class="item-row"><input type="checkbox" id="m18"><label for="m18" class="item-text">Burgers</label></div>
-            <div class="item-row"><input type="checkbox" id="m19"><label for="m19" class="item-text">Cheese Slices</label></div>
-            <div class="item-row"><input type="checkbox" id="m20"><label for="m20" class="item-text">Bread Rolls</label></div>
-            <div class="item-row"><input type="checkbox" id="m21"><label for="m21" class="item-text">Hotdogs & Hot dog rolls</label></div>
+            <div class="item-row"><input type="checkbox" id="m22"><label for="m22" class="item-text"><strong>Beer Bong</strong></label></div>
         </div>
     </div>
 
@@ -310,29 +286,15 @@
         <h2>🐿️ A good squirrel scout always remembers..</h2>
         <div class="item-list">
             <div class="item-row"><input type="checkbox" id="q1"><label for="q1" class="item-text">First aid Kit</label></div>
-            <div class="item-row"><input type="checkbox" id="q2"><label for="q2" class="item-text">Suncream and Ibuprofen <span class="note">The hangover cure</span></label></div>
+            <div class="item-row"><input type="checkbox" id="q2"><label for="q2" class="item-text">Suncream, Ibuprofen, Paracetamol <span class="note">The hangover cure suite</span></label></div>
             <div class="item-row"><input type="checkbox" id="q3"><label for="q3" class="item-text">Loo Roll</label></div>
             <div class="item-row"><input type="checkbox" id="q4"><label for="q4" class="item-text">Wet wipes <span class="note">The festival shower</span></label></div>
-            <div class="item-row"><input type="checkbox" id="q5"><label for="q5" class="item-text">Tea towels</label></div>
             <div class="item-row"><input type="checkbox" id="q6"><label for="q6" class="item-text">Poncho</label></div>
             <div class="item-row"><input type="checkbox" id="q7"><label for="q7" class="item-text">Towels</label></div>
             <div class="item-row"><input type="checkbox" id="q8"><label for="q8" class="item-text">Power Banks, Batteries, etc.</label></div>
             <div class="item-row"><input type="checkbox" id="q9"><label for="q9" class="item-text">Re-usable Water Bottle</label></div>
             <div class="item-row"><input type="checkbox" id="q10"><label for="q10" class="item-text">Rubbish Bags</label></div>
-            <div class="item-row"><input type="checkbox" id="q11"><label for="q11" class="item-text">Hair bobbles</label></div>
-            <div class="item-row"><input type="checkbox" id="q12"><label for="q12" class="item-text">Mirror</label></div>
             <div class="item-row"><input type="checkbox" id="q13"><label for="q13" class="item-text">Cool Box</label></div>
-        </div>
-    </div>
-
-    <div class="card" data-cat="kitchen">
-        <h2>🍳 Every-f*cking-thing but the Kitchen sink..</h2>
-        <div class="item-list">
-            <div class="item-row"><input type="checkbox" id="k1"><label for="k1" class="item-text">Burner, Kettle, Pans and Fuel</label></div>
-            <div class="item-row"><input type="checkbox" id="k2"><label for="k2" class="item-text">Disposable BBQ</label></div>
-            <div class="item-row"><input type="checkbox" id="k3"><label for="k3" class="item-text">Cups, Plates, Bowls</label></div>
-            <div class="item-row"><input type="checkbox" id="k4"><label for="k4" class="item-text">Wash bowl</label></div>
-            <div class="item-row"><input type="checkbox" id="k5"><label for="k5" class="item-text">Sponges and washing up liquid</label></div>
         </div>
     </div>
 
@@ -341,7 +303,6 @@
     <script>
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
         
-        // Load saved state from browser local storage
         window.addEventListener('DOMContentLoaded', () => {
             checkboxes.forEach(cb => {
                 const state = localStorage.getItem(cb.id);
@@ -353,7 +314,6 @@
             updateProgress();
         });
 
-        // Toggle styling and save state on check/uncheck
         checkboxes.forEach(cb => {
             cb.addEventListener('change', (e) => {
                 const row = e.target.closest('.item-row');
@@ -367,9 +327,35 @@
             });
         });
 
-        // Make entire row clickable for mobile ease
         document.querySelectorAll('.item-row').forEach(row => {
             row.addEventListener('click', (e) => {
                 if (e.target.tagName !== 'INPUT') {
                     const cb = row.querySelector('input[type="checkbox"]');
-                    cb.checked
+                    cb.checked = !cb.checked;
+                    cb.dispatchEvent(new Event('change'));
+                }
+            });
+        });
+
+        function updateProgress() {
+            const total = checkboxes.length;
+            const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const percentage = Math.round((checked / total) * 100) || 0;
+            
+            document.getElementById('progress-bar').style.width = percentage + '%';
+            document.getElementById('progress-text').innerText = percentage + '%';
+        }
+
+        function resetApp() {
+            if (confirm('Clear everything and start packing fresh?')) {
+                checkboxes.forEach(cb => {
+                    cb.checked = false;
+                    cb.closest('.item-row').classList.remove('checked');
+                    localStorage.removeItem(cb.id);
+                });
+                updateProgress();
+            }
+        }
+    </script>
+</body>
+</html>
